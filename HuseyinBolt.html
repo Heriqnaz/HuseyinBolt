@@ -1,0 +1,42 @@
+<html>
+    <hand>
+
+    </hand>
+    <body>
+
+        <input type="text" id="1">
+        <button onclick="foo()">Push</button>
+        <input type="text" id="2">
+
+        <script>
+
+        function  foo() 
+        {
+            var v=1;
+            var t=0;
+            var x = document.getElementById('1').value;
+            for(var i=1; i<x; i++)
+            {
+
+                if(i<=10)
+                {
+                    t+=1/5;
+                }
+                else if(i>10 && i<=50)
+                {
+                    t+=1/2;
+                }
+                else 
+                {
+                    
+                    t+=(1/v);
+                    v=(v/2);
+                }
+            }
+            document.getElementById('2').value = t;
+        }
+
+
+       </script>
+    </body>
+</html>
